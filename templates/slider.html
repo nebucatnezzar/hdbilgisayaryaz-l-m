@@ -1,0 +1,21 @@
+
+{% block content %}
+
+{% for slider in sliders %}
+    <section class="banner-two" id="home">
+        <span class="banner-two__bubble banner-two__bubble-one"></span>
+        <span class="banner-two__bubble banner-two__bubble-two"></span>
+        <span class="banner-two__bubble banner-two__bubble-three"></span>
+        <span class="banner-two__bubble banner-two__bubble-four"></span>
+        <span class="banner-two__bubble banner-two__bubble-five"></span>
+        <div class="container">
+            <div class="banner-two__content text-center">
+                <h2 class="banner-two__title">{{ slider.title }}</h2><!-- /.banner-two__title -->
+                <img src="{{ slider.image.url }}" class="banner-two__moc" alt="HD Bilgisayar"/>
+            </div><!-- /.banner-two__content -->
+        </div><!-- /.container -->
+    </section><!-- /.banner-two -->
+
+{% endfor %}
+
+{% endblock content %}

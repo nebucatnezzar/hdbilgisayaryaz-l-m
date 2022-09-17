@@ -1,0 +1,85 @@
+{% block content %}
+
+
+
+   
+<section class="faq-one" id="faqs">
+    <span class="faq-one__bubble faq-one__bubble-one"></span>
+    <span class="faq-one__bubble faq-one__bubble-two"></span>
+    <span class="faq-one__bubble faq-one__bubble-three"></span>
+    <span class="faq-one__bubble faq-one__bubble-four"></span>
+    <span class="faq-one__bubble faq-one__bubble-five"></span>
+    <div class="container">
+        <div class="block-title text-center">
+            <h2 class="block-title__title">Sıkça Sorulan<br>Sorular</h2><!-- /.block-title__title -->
+        </div><!-- /.block-title -->
+
+        {% for faq in sikca_sorulan_sorular %}
+            <div class="accrodion-grp" data-grp-name="faq-accrodion">
+                <div class="accrodion active">
+                    <div class="accrodion-title">
+                        <h4>{{ faq.SikcaSorulanSorular_bir }}</h4>
+                    </div>
+                    <div class="accrodion-content">
+                        <div class="inner">
+                            <p>{{ faq.SikcaSorulanSorular_text_bir }}</p>
+                        </div><!-- /.inner -->
+                    </div>
+                </div>
+                <div class="accrodion ">
+                    <div class="accrodion-title">
+                        <h4>{{ faq.SikcaSorulanSorular_iki }}</h4>
+                    </div>
+                    <div class="accrodion-content">
+                        <div class="inner">
+                            <p>{{ faq.SikcaSorulanSorular_text_iki }}</p>
+                        </div><!-- /.inner -->
+                    </div>
+                </div>
+                <div class="accrodion">
+                    <div class="accrodion-title">
+                        <h4>{{ faq.SikcaSorulanSorular_uc}}</h4>
+                    </div>
+                    <div class="accrodion-content">
+                        <div class="inner">
+                            <p>{{ faq.SikcaSorulanSorular_text_uc }}</p>
+                        </div><!-- /.inner -->
+                    </div>
+                </div>
+                <div class="accrodion">
+                    <div class="accrodion-title">
+                        <h4>{{ faq.SikcaSorulanSorular_dort }}</h4>
+                    </div>
+                    <div class="accrodion-content">
+                        <div class="inner">
+                            <p>{{ faq.SikcaSorulanSorular_text_dort }}</p>
+                        </div><!-- /.inner -->
+                    </div>
+                </div>
+                <div class="accrodion">
+                    <div class="accrodion-title">
+                        <h4>{{ faq.SikcaSorulanSorular_bes }}</h4>
+                    </div>
+                    <div class="accrodion-content">
+                        <div class="inner">
+                            <p>{{ faq.SikcaSorulanSorular_text_bes }}</p>
+                        </div><!-- /.inner -->
+                    </div>
+                </div>
+                <div class="accrodion">
+                    <div class="accrodion-title">
+                        <h4>{{ faq.SikcaSorulanSorular_alti }}</h4>
+                    </div>
+                    <div class="accrodion-content">
+                        <div class="inner">
+                            <p>{{ faq.SikcaSorulanSorular_text_alti }}</p>
+                        </div><!-- /.inner -->
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div><!-- /.container -->
+</section><!-- /.faq-one -->
+
+
+{% endblock content %}

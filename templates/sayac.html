@@ -1,0 +1,41 @@
+{% block content %}
+
+
+<section class="fun-fact-one fun-fact-one__home-two">
+    <div class="container">
+        <div class="row">
+            {% for sayac in sayaclar %}
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="fun-fact-one__single text-center">
+                        <h3 class="fun-fact-one__title counter">{{ sayac.project_sayac }}</h3><!-- /.fun-fact-one__title -->
+                        <p class="fun-fact-one__text">Projelerimiz</p><!-- /.fun-fact-one__text -->
+                    </div><!-- /.fun-fact-one__single -->
+                </div><!-- /.col-lg-3 -->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="fun-fact-one__single text-center">
+                        <h3 class="fun-fact-one__title counter">{{ sayac.musteri_sayac }}</h3><!-- /.fun-fact-one__title -->
+                        <p class="fun-fact-one__text">Müşterilerimiz</p><!-- /.fun-fact-one__text -->
+                    </div><!-- /.fun-fact-one__single -->
+                </div><!-- /.col-lg-3 -->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="fun-fact-one__single text-center">
+                        <h3 class="fun-fact-one__title counter">{{ sayac.referans_sayac}}</h3><!-- /.fun-fact-one__title -->
+                        <p class="fun-fact-one__text">Referanslarımız</p><!-- /.fun-fact-one__text -->
+                    </div><!-- /.fun-fact-one__single -->
+                </div><!-- /.col-lg-3 -->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="fun-fact-one__single text-center">
+                        <h3 class="fun-fact-one__title counter">{{ sayac.uzman_sayac }}</h3><!-- /.fun-fact-one__title -->
+                        <p class="fun-fact-one__text">Uzman Ekibimiz</p><!-- /.fun-fact-one__text -->
+                    </div><!-- /.fun-fact-one__single -->
+                </div><!-- /.col-lg-3 -->
+            {% endfor %}
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.fun-fact-one -->
+
+
+{% endblock content %}
+
+
+

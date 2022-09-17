@@ -1,0 +1,66 @@
+{% load static %}
+{% block content %}
+
+<header class="site-header header-one">
+    <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+        <div class="container clearfix">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="logo-box clearfix">
+                <a class="navbar-brand" href="index.html">
+                    <img src="{% static 'images/logo1.png' %}" class="main-logo" alt="Awesome Image" />
+                </a>
+                <button class="menu-toggler" data-target=".header-one .main-navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+            </div><!-- /.logo-box -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="main-navigation">
+                <ul class=" navigation-box one-page-scroll-menu ">
+                    <li class="current scrollToLink">
+                        <a href="#home">ANASAYFA</a>
+                    </li>
+                    <li class="scrollToLink">
+                        <a href="#services">HİZMETLERİMİZ</a>
+                    </li>
+
+                    <li class="scrollToLink">
+                        <a href="#servisler">SERVİSLER</a>
+                    </li>
+
+                    <li class="scrollToLink">
+                        <a href="#nedenbiz">Neden Biz ?</a>
+                    </li>
+
+
+                    {% comment %} <li class="scrollToLink">
+                        <a href="#testimonials">YORUMLAR</a>
+                    </li> {% endcomment %}
+                    
+                    <li class="scrollToLink">
+                        <a href="#faqs">S.S.S</a>
+                    </li>
+                    <li class="scrollToLink">
+                        <a href="#blog">ÇALIŞMALARIMIZ</a>
+                        <ul class="sub-menu">
+                        </ul><!-- /.sub-menu -->
+                    </li>
+                    <li class="scrollToLink">
+                        <a href="#pricing">İLETİŞİM</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+</header><!-- /.header-one -->
+
+
+
+
+{% endblock content %}
+
+
+
+
+
+

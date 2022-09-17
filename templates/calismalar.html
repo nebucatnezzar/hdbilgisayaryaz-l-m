@@ -1,0 +1,63 @@
+{% block content %}
+
+<section class="blog-one blog-one__home-two" id="blog">
+    <div class="container">
+        <div class="block-title text-center">
+            <h2 class="block-title__title">SEKTÖREL<br>ÇALIŞMALARIMIZ</h2><!-- /.block-title__title -->
+        </div><!-- /.block-title -->
+        <div class="row">
+            {% for calisma in calismalar %}
+                <div class="col-lg-4">
+                    <div class="blog-one__single">
+                        <div class="blog-one__image">
+                            <img src="{{ calisma.calismalar_image_bir.url }}" alt="Awesome Image" />
+                        </div><!-- /.blog-one__image -->
+                        <div class="blog-one__content">
+                            <div class="blog-one__content-inner">
+                                <div class="blog-one__meta">
+                                </div><!-- /.blog-one__meta -->
+                                <h3 class="blog-one__title"><a href="#">{{ calisma.calismalar_title_bir }}</a></h3><!-- /.blog-one__title -->
+                            </div><!-- /.blog-one__content-inner -->
+                            <a href="blog-details.html" class="blog-one__link"><i class="icon-revresed zeino-icon-left-arrow"></i></a>
+                        </div><!-- /.blog-one__content -->
+                    </div><!-- /.blog-one__single -->
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="blog-one__single">
+                        <div class="blog-one__image">
+                            <img src="{{ calisma.calismalar_image_iki.url }}" alt="Awesome Image" />
+                        </div><!-- /.blog-one__image -->
+                        <div class="blog-one__content">
+                            <div class="blog-one__content-inner">
+                                <div class="blog-one__meta">
+                                  
+                                </div><!-- /.blog-one__meta -->
+                                <h3 class="blog-one__title"><a href="blog-details.html">{{ calisma.calismalar_title_iki}}</a></h3><!-- /.blog-one__title -->
+                            </div><!-- /.blog-one__content-inner -->
+                            <a href="blog-details.html" class="blog-one__link"><i class="icon-revresed zeino-icon-left-arrow"></i></a>
+                        </div><!-- /.blog-one__content -->
+                    </div><!-- /.blog-one__single -->
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="blog-one__single">
+                        <div class="blog-one__image">
+                            <img src="{{ calisma.calismalar_image_uc.url }}" alt="Awesome Image" />
+                        </div><!-- /.blog-one__image -->
+                        <div class="blog-one__content">
+                            <div class="blog-one__content-inner">
+                                <div class="blog-one__meta">
+                                    
+                                </div><!-- /.blog-one__meta -->
+                                <h3 class="blog-one__title"><a href="blog-details.html">{{ calisma.calismalar_title_uc}}</a></h3><!-- /.blog-one__title -->
+                            </div><!-- /.blog-one__content-inner -->
+                            <a href="blog-details.html" class="blog-one__link"><i class="icon-revresed zeino-icon-left-arrow"></i></a>
+                        </div><!-- /.blog-one__content -->
+                    </div><!-- /.blog-one__single -->
+                </div><!-- /.col-lg-4 -->
+            {% endfor %}
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.blog-one -->
+
+
+{% endblock content %}

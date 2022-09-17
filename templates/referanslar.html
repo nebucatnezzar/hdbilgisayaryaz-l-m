@@ -1,0 +1,45 @@
+{% block content %}
+
+<section class="brand-one">
+    <div class="container">
+        {% for referans in referanslar %}
+        
+            <div class="brand-one__carousel owl-them owl-carousel">
+                <div class="item">
+                    <img src="{{ referans.referans_bir }}" alt="Awesome Image" />
+                </div><!-- /.item -->
+                <div class="item">
+                    <img src="{{ referans.referans_iki }}" alt="Awesome Image" />
+                </div><!-- /.item -->
+                <div class="item">
+                    <img src="{{ referans.referans_uc }}" alt="Awesome Image" />
+                </div><!-- /.item -->
+                <div class="item">
+                    <img src="{{ referans.referans_dort }}" alt="Awesome Image" />
+                </div><!-- /.item -->
+                <div class="item">
+                    <img src="{{ referans.referans_bes }}" alt="Awesome Image" />
+                </div><!-- /.item -->
+                <div class="item">
+                    <img src="{{ referans.referans_bir }}" alt="Awesome Image" />
+                </div><!-- /.item -->
+                <div class="item">
+                    <img src="{{ referans.referans_iki }}" alt="Awesome Image" />
+                </div><!-- /.item -->
+                <div class="item">
+                    <img src="{{ referans.referans_uc }}" alt="Awesome Image" />
+                </div><!-- /.item -->
+                <div class="item">
+                    <img src="{{ referans.referans_dort }}" alt="Awesome Image" />
+                </div><!-- /.item -->
+                <div class="item">
+                    <img src="{{ referans.referans_bes }}" alt="Awesome Image" />
+                </div><!-- /.item -->
+        
+            </div><!-- /.brand-one__carousel owl-them owl-carousel -->
+        {% endfor %}
+    </div><!-- /.container -->
+</section><!-- /.brand-one -->
+
+
+{% endblock content %}

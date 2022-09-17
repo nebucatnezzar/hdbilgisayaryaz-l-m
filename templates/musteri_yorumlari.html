@@ -1,0 +1,98 @@
+{% load static %}
+
+
+{% block content %}
+
+
+<section class="testimonials-one" id="testimonials">
+    <div class="container">
+        <div class="block-title text-center">
+            <h2 class="block-title__title">SOSYAL MEDYADA <br> BİZ</h2><!-- /.block-title__title -->
+        </div><!-- /.block-title -->
+    </div><!-- /.container -->
+    <div class="container-fluid">
+        <div class="testimonials-one__carousel owl-theme owl-carousel">
+            {% for musteri_yorum in musteri_yorumları %}
+                <div class="item">
+                    <div class="testimonials-one__single">
+                        <div class="testimonials-one__inner">
+                            <div class="testimonials-one__top">
+                                <div class="testimonials-one__image">
+                                    <img src="{{ musteri_yorum.musteri_yorumlari_bir_resim.url }}" alt="Awesome Image" />
+                                    <span class="testimonials-one__qoute">
+                                        <img src="{% static 'images/qoute-1-1.png' %}" alt="Awesome Image" />
+                                    </span>
+                                </div><!-- /.testimonials-one__image -->
+                                <div class="testimonials-one__stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i>
+                                </div><!-- /.testimonials-one__stars -->
+                            </div><!-- /.testimonials-one__top -->
+                            <div class="testimonials-one__content">
+                                <p class="testimonials-one__text"> {{ musteri_yorum.musteri_yorumlari_bir_aciklama }}</p>
+                                <h3 class="testimonials-one__name">{{ musteri_yorum.musteri_yorumlari_bir_title }}</h3><!-- /.testimonials-one__name -->
+                            </div><!-- /.testimonials-one__content -->
+                        </div><!-- /.testimonials-one__inner -->
+                    </div><!-- /.testimonials-one__single -->
+                </div><!-- /.item -->
+                <div class="item">
+                    <div class="testimonials-one__single">
+                        <div class="testimonials-one__inner">
+                            <div class="testimonials-one__top">
+                                <div class="testimonials-one__image">
+                                    <img src="{{ musteri_yorum.musteri_yorumlari_iki_resim.url }}" alt="Awesome Image" />
+                                    <span class="testimonials-one__qoute">
+                                        <img src="{% static 'images/qoute-1-1.png' %}" alt="Awesome Image" />
+                                    </span>
+                                </div><!-- /.testimonials-one__image -->
+                                <div class="testimonials-one__stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i>
+                                </div><!-- /.testimonials-one__stars -->
+                            </div><!-- /.testimonials-one__top -->
+                            <div class="testimonials-one__content">
+                                <p class="testimonials-one__text"> {{ musteri_yorum.musteri_yorumlari_iki_aciklama }}</p>
+                                <h3 class="testimonials-one__name">{{ musteri_yorum.musteri_yorumlari_iki_title }}</h3><!-- /.testimonials-one__name -->
+                            </div><!-- /.testimonials-one__content -->
+                        </div><!-- /.testimonials-one__inner -->
+                    </div><!-- /.testimonials-one__single -->
+                </div><!-- /.item -->
+                <div class="item">
+                    <div class="testimonials-one__single">
+                        <div class="testimonials-one__inner">
+                            <div class="testimonials-one__top">
+                                <div class="testimonials-one__image">
+                                    <img src="{{ musteri_yorum.musteri_yorumlari_uc_resim.url }}" alt="Awesome Image" />
+                                    <span class="testimonials-one__qoute">
+                                        <img src="{% static 'images/qoute-1-1.png' %}" alt="Awesome Image" />
+                                    </span>
+                                </div><!-- /.testimonials-one__image -->
+                                <div class="testimonials-one__stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i>
+                                </div><!-- /.testimonials-one__stars -->
+                            </div><!-- /.testimonials-one__top -->
+                            <div class="testimonials-one__content">
+                                <p class="testimonials-one__text"> {{ musteri_yorum.musteri_yorumlari_uc_aciklama }}</p>
+                                <h3 class="testimonials-one__name">{{ musteri_yorum.musteri_yorumlari_uc_title }}</h3><!-- /.testimonials-one__name -->
+                            </div><!-- /.testimonials-one__content -->
+                        </div><!-- /.testimonials-one__inner -->
+                    </div><!-- /.testimonials-one__single -->
+                </div><!-- /.item -->
+                
+            {% endfor %}
+        </div><!-- /.testimonials-one__carousel owl-theme owl-carousel -->
+    </div><!-- /.container-fluid -->
+</section><!-- /.testimonials-one -->
+
+
+{% endblock content %}

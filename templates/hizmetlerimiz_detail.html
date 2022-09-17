@@ -1,0 +1,92 @@
+{% block content %}
+
+
+
+
+<section id="servisler" class="feature-one">
+    <div class="container">
+        <div class="row">
+            {% for hizmetler_detail in hizmetler_details %}
+                <div class="col-lg-6">
+                    <div class="feature-one__single">
+                        <div class="feature-one__icon">
+                            <div class="inner">
+                                <i class="zeino-icon-strategy"></i>
+                            </div><!-- /.inner -->
+                        </div><!-- /.feature-one__icon -->
+                        <div class="feature-one__content">
+                            <h3 class="feature-one__title">{{ hizmetler_detail.hizmetlerimiz_detail_bir }}</h3><!-- /.feature-one__title -->
+                            <p class="feature-one__text">{{ hizmetler_detail.hizmetlerimiz_detail_aciklama_bir }}</p><!-- /.feature-one__text -->
+                        </div><!-- /.feature-one__content -->
+                    </div><!-- /.feature-one__single -->
+                    <div class="feature-one__single">
+                        <div class="feature-one__icon">
+                            <div class="inner">
+                                <i class="zeino-icon-training"></i>
+                            </div><!-- /.inner -->
+                        </div><!-- /.feature-one__icon -->
+                        <div class="feature-one__content">
+                            <h3 class="feature-one__title">{{ hizmetler_detail.hizmetlerimiz_detail_iki }}</h3><!-- /.feature-one__title -->
+                            <p class="feature-one__text">{{ hizmetler_detail.hizmetlerimiz_detail_aciklama_iki }}</p><!-- /.feature-one__text -->
+                        </div><!-- /.feature-one__content -->
+                    </div><!-- /.feature-one__single -->
+                    <div class="feature-one__single">
+                        <div class="feature-one__icon">
+                            <div class="inner">
+                                <i class="zeino-icon-human-resources"></i>
+                            </div><!-- /.inner -->
+                        </div><!-- /.feature-one__icon -->
+                        <div class="feature-one__content">
+                            <h3 class="feature-one__title">{{ hizmetler_detail.hizmetlerimiz_detail_uc }}</h3><!-- /.feature-one__title -->
+                            <p class="feature-one__text">{{ hizmetler_detail.hizmetlerimiz_detail_aciklama_uc }}</p><!-- /.feature-one__text -->
+                        </div><!-- /.feature-one__content -->
+                    </div><!-- /.feature-one__single -->
+                </div><!-- /.col-lg-6 -->
+                <div class="col-lg-6">
+                    <div class="feature-one__single">
+                        <div class="feature-one__icon">
+                            <div class="inner">
+                                <i class="zeino-icon-strategy"></i>
+                            </div><!-- /.inner -->
+                        </div><!-- /.feature-one__icon -->
+                        <div class="feature-one__content">
+                            <h3 class="feature-one__title">{{ hizmetler_detail.hizmetlerimiz_detail_dort }}</h3><!-- /.feature-one__title -->
+                            <p class="feature-one__text">{{ hizmetler_detail.hizmetlerimiz_detail_aciklama_dort }}</p><!-- /.feature-one__text -->
+                        </div><!-- /.feature-one__content -->
+                    </div><!-- /.feature-one__single -->
+                    <div class="feature-one__single">
+                        <div class="feature-one__icon">
+                            <div class="inner">
+                                <i class="zeino-icon-training"></i>
+                            </div><!-- /.inner -->
+                        </div><!-- /.feature-one__icon -->
+                        <div class="feature-one__content">
+                            <h3 class="feature-one__title">{{ hizmetler_detail.hizmetlerimiz_detail_bes }}</h3><!-- /.feature-one__title -->
+                            <p class="feature-one__text">{{ hizmetler_detail.hizmetlerimiz_detail_aciklama_bes }}</p><!-- /.feature-one__text -->
+                        </div><!-- /.feature-one__content -->
+                    </div><!-- /.feature-one__single -->
+                    <div class="feature-one__single">
+                        <div class="feature-one__icon">
+                            <div class="inner">
+                                <i class="zeino-icon-human-resources"></i>
+                            </div><!-- /.inner -->
+                        </div><!-- /.feature-one__icon -->
+                        <div class="feature-one__content">
+                            <h3 class="feature-one__title">{{ hizmetler_detail.hizmetlerimiz_detail_altı }}</h3><!-- /.feature-one__title -->
+                            <p class="feature-one__text">{{ hizmetler_detail.hizmetlerimiz_detail_aciklama_altı }}</p><!-- /.feature-one__text -->
+                        </div><!-- /.feature-one__content -->
+                    </div><!-- /.feature-one__single -->
+                </div><!-- /.col-lg-6 -->
+            {% endfor %}
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.feature-one -->
+
+
+
+
+{% endblock content %}
+
+
+
+

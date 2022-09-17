@@ -1,0 +1,57 @@
+{% load static %}
+
+{% block content %}
+
+
+
+{% for kurumsal in kurumsal_aciklama %}
+    <section id="nedenbiz" class="cta-two" style="background-image: url({{ kurumsal.kurumsal_aciklama_image_uc_bes_dokuz.url }});">
+        
+        <span class="cta-two__bubble cta-two__bubble-one"></span>
+        <span class="cta-two__bubble cta-two__bubble-two"></span>
+        <span class="cta-two__bubble cta-two__bubble-three"></span>
+        <span class="cta-two__bubble cta-two__bubble-four"></span>
+        <span class="cta-two__bubble cta-two__bubble-five"></span>
+        
+        <div  class="container">
+            <div class="row">
+                
+                
+
+                    {% comment %} <div class="col-lg-6 text-center">
+                        <div class="cta-two__images-block text-center">
+                            <img src="{{ kurumsal.kurumsal_aciklama_image_uc_bes_dokuz.url }}" class="cta-two__image-two" style="float: right;" alt="Awesome Image"/>
+                        </div>
+                    </div> {% endcomment %}
+
+                    <div class="col-lg-10" style="bottom: 128px;">
+                        
+                            <div class="cta-two__content">
+                                <div class="block-title text-left">
+                                    <h2 class="block-title__title">{{ kurumsal.kurumsal_aciklama_title }}</h2><!-- /.block-title__title -->
+                                </div><!-- /.block-title -->
+                                <p class="cta-two__text" style="color:#5176DF;">{{ kurumsal.kurumsal_acikla_text }}</p><!-- /.cta-two__text -->
+                                <ul class="cta-two__list">
+                                    <li class="cta-two__list-item" style="color:#ffffff;"><i class="fa fa-check"></i> {{ kurumsal.kurumsal_aciklama_bir}} </li><!-- /.cta-two__list-item -->
+                                    <li class="cta-two__list-item" style="color:#ffffff;"><i class="fa fa-check"></i> {{ kurumsal.kurumsal_aciklama_iki}} </li><!-- /.cta-two__list-item -->
+                                    <li class="cta-two__list-item" style="color:#ffffff;"><i class="fa fa-check"></i> {{ kurumsal.kurumsal_aciklama_uc}} </li><!-- /.cta-two__list-item -->
+                                    <li class="cta-two__list-item" style="color:#ffffff;"><i class="fa fa-check"></i> {{ kurumsal.kurumsal_aciklama_dort}} </li><!-- /.cta-two__list-item -->
+                                    <li class="cta-two__list-item" style="color:#ffffff;"><i class="fa fa-check"></i> {{ kurumsal.kurumsal_aciklama_bes}} </li><!-- /.cta-two__list-item -->
+                                    <li class="cta-two__list-item" style="color:#ffffff;"><i class="fa fa-check"></i> {{ kurumsal.kurumsal_aciklama_alti}} </li><!-- /.cta-two__list-item -->
+                                </ul>
+                            </div><!-- /.cta-two__content -->
+                    
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.cta-two -->
+
+{% endfor %}
+
+
+
+{% endblock content %}
+
+
+
+

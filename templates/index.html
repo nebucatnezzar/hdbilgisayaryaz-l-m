@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HD Bilgisayar Yazılım</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/manifest.json">
+    <link rel="favicon.ico" sizes="57x57" href="images/favicon/favicon.ico">
+    <link rel="favicon.ico" sizes="60x60" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon.ico">
+    <link rel="manifest" href="{% static 'images/favicon/manifest.json' %}">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -32,6 +32,7 @@
 <body class="dark-background">
     <div class="preloader"></div><!-- /.preloader -->
     <div class="page-wrapper">
+
         {% include 'nav.html' %}
 
 
@@ -52,6 +53,23 @@
         {% include 'faq.html' %}
 
         {% include 'calismalar.html' %}
+        <div id="iletisim" class="row">
+            <div class="col-md-12">
+                <div class="row margin-top-70">
+                    <div class="column column-3-4">
+                        <div class="contact-map" id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.9727242097492!2d29.117442315372028!3d40.93826497930791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7951cc54dcb%3A0xdeb76bc59e82919f!2shdbilgisayaryazilim!5e0!3m2!1str!2str!4v1663537863216!5m2!1str!2str" width="1900" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+        
+        
 
         {% include 'footer.html' %}
         
@@ -64,9 +82,11 @@
     <!-- /.scroll-to-top -->
     <script src="{% static 'js/jquery.js' %}"></script>
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
     <script src="{% static 'js/owl.carousel.min.js' %}"></script>
     <script src="{% static 'js/waypoints.min.js' %}"></script>
     <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+
     <script src="{% static 'js/waypoints.min.js' %}"></script>
     <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
     <script src="{% static 'js/owl.carousel.min.js' %}"></script>

@@ -1,11 +1,12 @@
+{% load static %}
 {% block content %}
 
 <section class="service-one" id="services">
-    <span class="service-one__bubble service-one__bubble-one"></span>
-    <span class="service-one__bubble service-one__bubble-two"></span>
-    <span class="service-one__bubble service-one__bubble-three"></span>
-    <span class="service-one__bubble service-one__bubble-four"></span>
-    <span class="service-one__bubble service-one__bubble-five"></span>
+    <span class="service-one__bubble service-one__bubble-one" style="color:#00beff;"></span>
+    <span class="service-one__bubble service-one__bubble-two" style="color:#00beff;"></span>
+    <span class="service-one__bubble service-one__bubble-three" style="color:#00beff;"></span>
+    <span class="service-one__bubble service-one__bubble-four" style="color:#00beff;"></span>
+    <span class="service-one__bubble service-one__bubble-five" style="color:#00beff;"></span>
     {% for hizmet in hizmetler %}
 
     <div class="container">
@@ -18,40 +19,40 @@
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                     <div class="service-one__single">
                         <div class="service-one__inner">
-                            <i class="zeino-icon-laptop service-one__icon"></i>
+                            <a href="#" class="service-one__more-link"><img style="width: 68px;"src="{% static 'images/web-design.png' %}" alt=""></a>
+
                             <h3 class="service-one__title"><a href="#">{{hizmet.hizmeler_bir}}</a></h3><!-- /.service-one__title -->
                             <p class="service-one__text">{{hizmet.hizmetler_bir_aciklama}}</p><!-- /.service-one__text -->
-                            <a href="#" class="service-one__more-link"><i class="icon-revresed zeino-icon-left-arrow"></i></a>
                         </div><!-- /.service-one__inner -->
                     </div><!-- /.service-one__single -->
                 </div><!-- /.col-lg-3 -->
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                     <div class="service-one__single">
                         <div class="service-one__inner">
-                            <i class="zeino-icon-presentation service-one__icon"></i>
+                            <a href="#" class="service-one__more-link"><img style="width: 68px;"src="{% static 'images/kurumsal.png' %}" alt=""></a>
+
                             <h3 class="service-one__title"><a href="#">{{ hizmet.hizmeler_iki }}</a></h3><!-- /.service-one__title -->
                             <p class="service-one__text">{{ hizmet.hizmetler_iki_aciklama }}</p><!-- /.service-one__text -->
-                            <a href="#" class="service-one__more-link"><i class="icon-revresed zeino-icon-left-arrow"></i></a>
                         </div><!-- /.service-one__inner -->
                     </div><!-- /.service-one__single -->
                 </div><!-- /.col-lg-3 -->
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                     <div class="service-one__single">
                         <div class="service-one__inner">
-                            <i class="zeino-icon-target service-one__icon"></i>
+                            <a href="#" class="service-one__more-link"><img style="width: 68px;"src="{% static 'images/crm.png' %}" alt=""></a>
+
                             <h3 class="service-one__title"><a href="#">{{ hizmet.hizmeler_uc }}</a></h3><!-- /.service-one__title -->
                             <p class="service-one__text">{{ hizmet.hizmetler_uc_aciklama }}</p><!-- /.service-one__text -->
-                            <a href="#" class="service-one__more-link"><i class="icon-revresed zeino-icon-left-arrow"></i></a>
                         </div><!-- /.service-one__inner -->
                     </div><!-- /.service-one__single -->
                 </div><!-- /.col-lg-3 -->
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                     <div class="service-one__single">
                         <div class="service-one__inner">
-                            <i class="zeino-icon-visualization service-one__icon"></i>
+                            <a href="#" class="service-one__more-link"><img style="width: 68px;"src="{% static 'images/IoT.png' %}" alt=""></a>
+
                             <h3 class="service-one__title"><a href="#">{{ hizmet.hizmeler_dort }}</a></h3><!-- /.service-one__title -->
                             <p class="service-one__text">{{ hizmet.hizmetler_dort_aciklama }}</p><!-- /.service-one__text -->
-                            <a href="#" class="service-one__more-link"><i class="icon-revresed zeino-icon-left-arrow"></i></a>
                         </div><!-- /.service-one__inner -->
                     </div><!-- /.service-one__single -->
                 </div><!-- /.col-lg-3 -->

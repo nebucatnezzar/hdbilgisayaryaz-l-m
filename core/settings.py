@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-t3idrd-2k0v^4pu0171co6oqzv^$t$0i)tq^l#dtgf#h+#)05f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["54.160.156.8","bilgisayaryazilim.com","www.bilgisayaryazilim.com"]
 
 
 # Application definition
@@ -119,7 +119,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [ BASE_DIR / "static" ]
-
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 MEDIA_URL = "/images/"
 MEDIA_ROOT = BASE_DIR / "uploads"
 # Default primary key field type

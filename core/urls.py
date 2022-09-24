@@ -23,3 +23,7 @@ urlpatterns = [
     path('',include('portofillo.urls'))
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
 
+
+admin.site.site_title = "HD Bilgisayar Yazılım"
+admin.site.site_header = "HD Bilgisayar Yazılım"
+admin.site.index_title = "HD Bilgisayar Yazılım Yönetim Paneline Hoşgeldiniz Taner Volkan Gündüz"

@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-t3idrd-2k0v^4pu0171co6oqzv^$t$0i)tq^l#dtgf#h+#)05f
 DEBUG = True
 
 ALLOWED_HOSTS = ["54.160.156.8","bilgisayaryazilim.com","www.bilgisayaryazilim.com"]
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'portofillo',
+    'ckeditor'
 ]
 
 MIDDLEWARE = [
@@ -116,6 +118,15 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
+
+
+CKEDITOR_CONFIGS = {
+    'default':{
+        'toolbar':'full',
+        'height':500,
+        'widht':500
+    }
+}
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [ BASE_DIR / "static" ]

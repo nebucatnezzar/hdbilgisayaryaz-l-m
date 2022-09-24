@@ -22,7 +22,7 @@
                             <a href="#" class="service-one__more-link"><img style="width: 68px;"src="{% static 'images/web-design.png' %}" alt=""></a>
 
                             <h3 class="service-one__title"><a href="#">{{hizmet.hizmeler_bir}}</a></h3><!-- /.service-one__title -->
-                            <p class="service-one__text">{{hizmet.hizmetler_bir_aciklama}}</p><!-- /.service-one__text -->
+                            <p class="service-one__text">{{hizmet.hizmetler_bir_aciklama|safe}}</p><!-- /.service-one__text -->
                         </div><!-- /.service-one__inner -->
                     </div><!-- /.service-one__single -->
                 </div><!-- /.col-lg-3 -->
@@ -32,7 +32,7 @@
                             <a href="#" class="service-one__more-link"><img style="width: 68px;"src="{% static 'images/kurumsal.png' %}" alt=""></a>
 
                             <h3 class="service-one__title"><a href="#">{{ hizmet.hizmeler_iki }}</a></h3><!-- /.service-one__title -->
-                            <p class="service-one__text">{{ hizmet.hizmetler_iki_aciklama }}</p><!-- /.service-one__text -->
+                            <p class="service-one__text">{{ hizmet.hizmetler_iki_aciklama|safe }}</p><!-- /.service-one__text -->
                         </div><!-- /.service-one__inner -->
                     </div><!-- /.service-one__single -->
                 </div><!-- /.col-lg-3 -->
@@ -42,7 +42,7 @@
                             <a href="#" class="service-one__more-link"><img style="width: 68px;"src="{% static 'images/crm.png' %}" alt=""></a>
 
                             <h3 class="service-one__title"><a href="#">{{ hizmet.hizmeler_uc }}</a></h3><!-- /.service-one__title -->
-                            <p class="service-one__text">{{ hizmet.hizmetler_uc_aciklama }}</p><!-- /.service-one__text -->
+                            <p class="service-one__text">{{ hizmet.hizmetler_uc_aciklama|safe}}</p><!-- /.service-one__text -->
                         </div><!-- /.service-one__inner -->
                     </div><!-- /.service-one__single -->
                 </div><!-- /.col-lg-3 -->
@@ -52,7 +52,7 @@
                             <a href="#" class="service-one__more-link"><img style="width: 68px;"src="{% static 'images/IoT.png' %}" alt=""></a>
 
                             <h3 class="service-one__title"><a href="#">{{ hizmet.hizmeler_dort }}</a></h3><!-- /.service-one__title -->
-                            <p class="service-one__text">{{ hizmet.hizmetler_dort_aciklama }}</p><!-- /.service-one__text -->
+                            <p class="service-one__text">{{ hizmet.hizmetler_dort_aciklama|safe }}</p><!-- /.service-one__text -->
                         </div><!-- /.service-one__inner -->
                     </div><!-- /.service-one__single -->
                 </div><!-- /.col-lg-3 -->
